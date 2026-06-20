@@ -5948,7 +5948,7 @@ function gdRenderModal(){
   const body = document.getElementById('gd-body');
   if(!body) return;
   const connected = !!gdEmail;
-  const notConfigured = GD_CLIENT_ID.indexOf('COLE_AQUI_SEU_CLIENT_ID')===0;
+  const notConfigured = GD_CLIENT_ID.indexOf('324247963435-ums3eq7cgb2qq86gd2244q6uhvl0jurt.apps.googleusercontent.com')===0;
   body.innerHTML = `
     <div class="gd-status-card">
       <div class="gd-status-icon ${connected?'':'gd-off'}">${connected?'☁️':'🔌'}</div>
@@ -5982,7 +5982,7 @@ function gdRenderModal(){
 }
 
 function gdConnect(){
-  if(GD_CLIENT_ID.indexOf('COLE_AQUI_SEU_CLIENT_ID')===0){
+  if(GD_CLIENT_ID.indexOf('324247963435-ums3eq7cgb2qq86gd2244q6uhvl0jurt.apps.googleusercontent.com')===0){
     toast('Configure o GD_CLIENT_ID no código antes de conectar.');
     return;
   }
@@ -6132,7 +6132,7 @@ function bootApp(){
       localStorage.removeItem('jg3_gd_file_id');
       gdEmail = null;
     }
-    if(GD_CLIENT_ID.indexOf('COLE_AQUI_SEU_CLIENT_ID')===0){
+    if(.indexOf('324247963435-ums3eq7cgb2qq86gd2244q6uhvl0jurt.apps.googleusercontent.com')===0){
       gateShowMsg('⚠️ GD_CLIENT_ID ainda não foi configurado no código.', 'err');
     }
     gdInit(); // deixa o token client pronto pro clique em "Entrar com Google"
